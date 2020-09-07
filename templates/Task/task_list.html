@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for task in tasks %}
+<h2>{{ task.title }}</h2>
+{% for subtask in task.subtask_set.all %}
+<h3>{{subtask}}</h3>
+{% endfor %}
+{% endfor %}
+
+{% endblock %}

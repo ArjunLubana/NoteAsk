@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ebebeb;
+}
+
+header{
+    position: relative;
+}
+
+.navigation{
+    position:absolute;
+    top:1rem;
+    right:.9vw;
+}
+
+.navigation a{
+    margin:.5rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;   
+    align-content: center;
+}
+
+.main{
+    max-width:750px;
+    margin: 0 auto;
+}
+footer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    font-size: small;
+}
+.footer-logo img{
+    width:5rem;
+}

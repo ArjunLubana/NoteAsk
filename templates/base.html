@@ -1,16 +1,46 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteAsk</title>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
+
 <body>
-    <h1>Navigation Bar</h1>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="{% static 'images/logo.svg' %}" alt="logo"></a>
 
-    {% block content %}{% endblock %}
+        </div>
+        <div class="navigation">
+            <a href="#"><span class="iconify" data-inline="false" data-icon="carbon:settings"
+                    style="font-size: 36px; color: #696969;"></span></a>
+            <a href="#"><span class="iconify" data-inline="false" data-icon="carbon:haze-night"
+                    style="font-size: 36px; color: #696969;"></span></a>
+        </div>
+    </header>
 
-    <h1>Footer</h1>
+    <main class="main">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        <div class="footer-logo">
+            <a href="#"><img src="{% static 'images/footer_logo.svg' %}" alt="logo"></a>
+        </div>
+        <div class="copyright">
+            © 2020 NoteAsk.
+        </div>
+    </footer>
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 </body>
+
 </html>
