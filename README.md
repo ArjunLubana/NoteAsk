@@ -1,1 +1,2 @@
-# NoteAsk combines the functionality of note taking and Tasking to one app
+# NoteAsk
+It is basically for notes and tasks
